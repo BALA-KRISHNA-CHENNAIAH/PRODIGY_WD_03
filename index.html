@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Tic-Tac-Toe</h1>
+    
+    <div class="mode-toggle">
+      <label>
+        <input type="checkbox" id="ai-toggle">
+        Play vs AI
+      </label>
+    </div>
+
+    <div class="game-board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+    <h2 id="status">Player X's turn</h2>
+
+    <div class="scoreboard">
+      <p>Player X Wins: <span id="x-score">0</span></p>
+      <p>Player O Wins: <span id="o-score">0</span></p>
+      <p>Draws: <span id="draw-score">0</span></p>
+    </div>
+
+    <button id="restart">Restart Game</button>
+  </div>
+  <audio id="click-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_cfc2045d75.mp3?filename=click-124467.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
